@@ -1,16 +1,19 @@
 import './App.css'
-import Footer from './components/footer/Footer.jsx';
-import Header from './components/header/Header.jsx';
-import Button from './components/button/Button.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './views/home/Home.jsx'
+import Blog from './views/blog/Blog.jsx'
+import Coleccion from './views/coleccion/Coleccion.jsx'
 
 function App() {
   return (
-    <div>
-        <Header></Header>
-      <Footer></Footer>
-      <Button></Button>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+         <Route path="/coleccion" element={<Coleccion/>} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
