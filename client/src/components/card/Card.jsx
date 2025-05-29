@@ -18,5 +18,5 @@ function CartaMagic({img, titulo, desc, action}) {
     </Card>
   );
 }
- 
+
 export default CartaMagic;

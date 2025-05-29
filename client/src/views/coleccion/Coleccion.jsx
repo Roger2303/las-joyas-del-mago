@@ -23,7 +23,6 @@ const Coleccion = () => {
         desc={carta.text || "Sin descripción"}
         action="Comprar"
         />)))}
-       
       </div>
     </>
   );

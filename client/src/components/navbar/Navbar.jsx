@@ -62,7 +62,7 @@ const Navbar = () => {
             <>
               {role === "admin" ? (
                 <>
-                  <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+        
                   <Nav.Link as={Link} to="/carrito"><i className="bi bi-cart4" style={{ fontSize: "1.1rem" }}></i></Nav.Link>
                 </>
               ) : (
