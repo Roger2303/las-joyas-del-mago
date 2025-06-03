@@ -6,7 +6,6 @@ import Carrito from './views/carrito/Carrito.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 import { AuthProvider } from './context/AuthContext.jsx';
 
-
 function App() {
   return (
     <>

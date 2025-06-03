@@ -1,0 +1,44 @@
+[
+  {
+    "categoria": "ANUNCIOS",
+    "titulo": "Listas de los mazos del Kit de inicio de Magic The Gathering—FINAL FANTASY",
+    "descripcion": "El kit de inicio de Magic: The Gathering—FINAL FANTASY tiene todo lo que necesitas para empezar a jugar con esta increíble colección.",
+    "autor": "Wizards of the Coast",
+    "imagen": "magic1"
+  },
+  {
+    "categoria": "FEATURE",
+    "titulo": "Magic: The Gathering—FINAL FANTASY Prerelease Guide",
+    "descripcion": "Experience the FINAL FANTASY series in a brand-new way at your local game store's Prerelease event.",
+    "autor": "Jubilee Finnegan",
+    "imagen": "magic2"
+  },
+  {
+    "categoria": "FEATURE",
+    "titulo": "Magic: The Gathering—FINAL FANTASY Release Notes",
+    "descripcion": "The Release Notes include info about the release of a new set, as well as clarifications and rulings involving that set’s cards.",
+    "autor": "Eric Levine",
+    "imagen": "magic3"
+  },
+  {
+    "categoria": "ADELANTOS DE CARTAS",
+    "titulo": "Las fichas de Magic The Gathering—FINAL FANTASY",
+    "descripcion": "¡Lleva tus juegos a otro nivel con las fichas con arte completo de Magic: The Gathering—FINAL FANTASY!",
+    "autor": "Jubilee Finnegan",
+    "imagen": "magic4"
+  },
+  {
+    "categoria": "ADELANTOS DE CARTAS",
+    "titulo": "Cartas de arte de Magic The Gathering—FINAL FANTASY",
+    "descripcion": "Las despanpanantes obras de arte de Magic: The Gathering—FINAL FANTASY toman protagonismo en 53 cartas de arte.",
+    "autor": "Jubilee Finnegan",
+    "imagen": "magic5"
+  },
+  {
+    "categoria": "MTG ARENA",
+    "titulo": "MTG Arena Announcements – May 27, 2025",
+    "descripcion": "Catch up with the latest info and events on MTG Arena.",
+    "autor": "Jubilee Finnegan",
+    "imagen": "magic6"
+  }
+]
