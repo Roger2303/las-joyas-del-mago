@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { Button, Modal, Nav, Form } from 'react-bootstrap';
+import Register from '../../views/register/Register';
 
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ position: "relative", zIndex: 10 }}>
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">LAS JOYAS DEL MAGO </Link>
                
@@ -56,6 +57,7 @@ const Navbar = () => {
            <>
                   <Nav.Link as={Link} to="/">Home</Nav.Link>
                   <Nav.Link as={Link} to="/coleccion">Colección</Nav.Link>
+                  <Nav.Link as={Link} to="/registro"> Registrarse</Nav.Link>
           </>
            
             {isAuthenticated && (
@@ -71,7 +73,7 @@ const Navbar = () => {
               
               {role === "user" && (
                 <>
-                  <Nav.Link as={Link} to="/coleccion">Colección</Nav.Link>
+                  <Nav.Link as={Link} to="/carrito"><i className="bi bi-cart4" style={{ fontSize: "1.1rem" }}></i></Nav.Link>
                 </>
               )}
             </>
