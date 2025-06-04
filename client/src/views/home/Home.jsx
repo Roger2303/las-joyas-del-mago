@@ -57,8 +57,7 @@ const Home = () => {
             <p>
               ¡Ya está aquí Secret Lair para celebrar todo lo que nos gusta de
               Magic! Encuentra cartas con ilustraciones alucinantes, nuevos
-              artistas y más. ¡Pero date prisa! Cada drop está disponible por
-              tiempo limitado.
+              artistas y más. ¡Pero date prisa!
             </p>
             <div className="boton-1"><button className="btn btn-dark w-50 ">HAZ YA TU PEDIDO</button></div>
           </div>

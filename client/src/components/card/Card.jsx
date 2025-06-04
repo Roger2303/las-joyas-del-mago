@@ -11,7 +11,7 @@ function CartaMagic({img, titulo, desc, action}) {
         {desc}       
         </Card.Text>
         <div><span> <strong> Precio: </strong> $1000 </span></div>
-         <Button as={Link} to="/carrito" variant="dark" className="w-100">
+         <Button as={Link} to="/carrito" variant="dark" className="w-100 background-color: black">
           Comprar
         </Button>
       </Card.Body>
