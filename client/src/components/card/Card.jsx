@@ -1,5 +1,7 @@
 import { useCart } from "../../context/CartContext";
 import { useNavigate } from "react-router-dom"; 
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 function CartaMagic({ img, titulo, desc, cartaCompleta }) {
   const { dispatch } = useCart();
