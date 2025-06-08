@@ -1,16 +1,18 @@
 import { useCart } from "../../context/CartContext";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
+import { Card, Button } from "react-bootstrap"; // ✅ Agregado
 
 function CartaMagic({ img, titulo, desc, cartaCompleta }) {
   const { dispatch } = useCart();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleAddToCart = () => {
     dispatch({ type: "ADD_TO_CART", payload: cartaCompleta });
-    navigate("/carrito"); 
+    navigate("/carrito");
   };
+
   return (
-    <Card style={{ width: '18rem', border: "1px solid black" }}>
+    <Card style={{ width: '18rem', border: "1px solid black", margin: "1rem" }}>
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title>{titulo}</Card.Title>
@@ -29,4 +31,5 @@ function CartaMagic({ img, titulo, desc, cartaCompleta }) {
 }
 
 export default CartaMagic;
+
 
