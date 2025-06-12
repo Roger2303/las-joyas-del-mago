@@ -28,3 +28,5 @@ class database {
         return this.pool.query(sql, params);
     }
 };
+
+module.exports = new database();
