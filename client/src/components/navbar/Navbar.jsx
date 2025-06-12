@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ position: "relative", zIndex: 10 }}>
+      <nav className="navbar navbar-expand-lg bg-dark navbar-dark" style={{ position: "relative", zIndex: 10 }}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">LAS JOYAS DEL MAGO</Link>
 

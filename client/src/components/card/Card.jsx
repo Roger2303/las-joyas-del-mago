@@ -12,7 +12,7 @@ function CartaMagic({ img, titulo, desc, cartaCompleta }) {
     navigate("/carrito"); 
   };
   return (
-    <Card style={{ width: '18rem', border: "1px solid black" }}>
+    <Card style={{ width: '18rem', border: "3px solid black"}}>
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title>{titulo}</Card.Title>

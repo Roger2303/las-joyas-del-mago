@@ -15,7 +15,8 @@ const Coleccion = () => {
 
   return (
     <>
-      <h1>Encuentra tu colección</h1>
+    <div class="body">
+      <h1 class="titulo">ENCUENTRA TU COLECCIÓN</h1>
       <div className="container">
         {cartas.length === 0 ? (
           <Loading />
@@ -30,6 +31,7 @@ const Coleccion = () => {
             />
           ))
         )}
+      </div>
       </div>
     </>
   );

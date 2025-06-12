@@ -13,11 +13,29 @@ const Register = () => {
       setMensaje("Todos los campos son obligatorios.");
       return;
     }
-
-    setMensaje("Cuenta creada exitosamente.");
+    register();
+    
+    setMensaje("");
     setNombre("");
     setEmail("");
     setPassword("");
+  };
+
+
+  const register = async () => {
+    try {
+      const res = await fetch("http://localhost:9000/api/v1/register", {method: "POST", headers: {"Content-Type": "application/json",},
+    body: JSON.stringify({name: nombre, email, password}), 
+    });
+
+    if (!res.ok) throw new Error("Falló el registro");
+
+    const data = await res.json();
+    setMensaje("Usuario registrado con éxito");
+    } catch (e) {
+      console.error("Error:", e.mensaje);
+      setMensaje("Hubo un error a registrar");
+    }
   };
 
   return (
