@@ -5,3 +5,16 @@ CREATE TABLE IF NOT EXISTS users (
     password VARCHAR(200) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE IF NOT EXISTS cart_items (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    card_id VARCHAR(255) NOT NULL,
+    card_name VARCHAR(255) NOT NULL,
+    card_image TEXT,
+    card_type VARCHAR(100),
+    card_set VARCHAR(50),
+    price INTEGER NOT NULL,
+    quantity INTEGER NOT NULL DEFAULT 1,
+    added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
