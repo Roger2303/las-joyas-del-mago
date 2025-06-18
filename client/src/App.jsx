@@ -6,6 +6,7 @@ import Carrito from './views/carrito/Carrito.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 import { AuthProvider } from './context/AuthContext.jsx';
 import Register from "./views/register/Register.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
   return (
@@ -13,12 +14,14 @@ function App() {
       <AuthProvider>
       <BrowserRouter>
        <Navbar />
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/coleccion" element={<Coleccion/>} />
           <Route path="/carrito" element={<Carrito/>} />
           <Route path="/registro" element={<Register />} />
         </Routes>
+         <Footer/>
       </BrowserRouter>
       </AuthProvider>
     </>
