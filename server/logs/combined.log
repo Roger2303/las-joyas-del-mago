@@ -137,3 +137,40 @@
 {"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-16T01:46:25.536Z"}
 {"level":"warn","message":"Acceso denegado: No token provided","timestamp":"2025-06-16T02:27:55.789Z"}
 {"level":"warn","message":"Acceso denegado: Token inválido o expirado. Detalle: jwt expired","timestamp":"2025-06-16T02:28:16.821Z"}
+{"level":"error","message":"No se pudo conectar a la BDD: la autentificaci�n password fall� para el usuario �postgres�","timestamp":"2025-06-17T01:40:55.927Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-17T01:42:12.546Z"}
+{"code":"42804","detail":"Las columnas llave «user_id» y «id» son de tipos incompatibles: integer y uuid","file":"tablecmds.c","length":245,"level":"error","line":"9423","message":"Error creando tablas: la restricción de llave foránea «cart_items_user_id_fkey» no puede ser implementada","name":"error","routine":"ATAddForeignKeyConstraint","severity":"ERROR","stack":"error: la restricción de llave foránea «cart_items_user_id_fkey» no puede ser implementada\n    at C:\\las-joyas-del-mago\\server\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async initDb (C:\\las-joyas-del-mago\\server\\src\\db\\initDb.js:9:5)\n    at async startServer (C:\\las-joyas-del-mago\\server\\index.js:16:5)","timestamp":"2025-06-17T01:42:12.697Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-17T01:42:12.704Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-17T01:44:59.894Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-17T01:44:59.937Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-17T01:44:59.945Z"}
+{"level":"info","message":"Nuevo usuario registrado: roger.ancamilla@gmail.com","timestamp":"2025-06-17T01:46:19.024Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-18T22:48:29.520Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-18T22:48:29.681Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-18T22:48:29.690Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-18T22:53:08.967Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-18T22:53:08.973Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-18T22:53:08.977Z"}
+{"level":"warn","message":"Intento de registro con email existente: roger.ancamilla@gmail.com","timestamp":"2025-06-18T22:53:25.444Z"}
+{"level":"error","message":"El email ya está registrado","method":"POST","path":"/api/v1/register","stack":"AppError: El email ya está registrado\n    at Object.register (C:\\las-joyas-del-mago\\server\\src\\services\\user.service.js:18:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async register (C:\\las-joyas-del-mago\\server\\src\\controllers\\user.controller.js:7:20)","status":409,"timestamp":"2025-06-18T22:53:25.446Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:44:05.378Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:44:05.421Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:44:05.441Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:44:08.771Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:44:08.778Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:44:08.782Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:44:16.693Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:44:16.702Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:44:16.705Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:45:42.860Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:45:42.869Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:45:42.873Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:45:53.627Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:45:53.634Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:45:53.638Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:45:57.405Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:45:57.413Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:45:57.417Z"}
+{"level":"info","message":"Conexión a postgres establecida correctamente","timestamp":"2025-06-19T00:46:01.168Z"}
+{"level":"info","message":"Tablas verificadas/creadas correctamente 👌","timestamp":"2025-06-19T00:46:01.175Z"}
+{"level":"info","message":"Servidor escuchando en el puerto 9000","timestamp":"2025-06-19T00:46:01.180Z"}

@@ -4,6 +4,7 @@ const logger = require("../utils/logger");
 
 const API_BASE = "https://api.magicthegathering.io/v1/cards";
 
+//obtenemos la carta y la transformamos//
 const mapCard = (card) => ({
   id: card.id || card.multiverseid || null,
   name: card.name,
@@ -14,6 +15,7 @@ const mapCard = (card) => ({
   set: card.set || "",
 });
 
+//obtenemos las cartas desde la API//
 const getCards = async (filters = {}) => {
   try {
     const response = await axios.get(API_BASE, { params: filters });
@@ -24,6 +26,8 @@ const getCards = async (filters = {}) => {
   }
 };
 
+
+//buscamos una carta por ID//
 const getCardById = async (id) => {
   try {
     const response = await axios.get(`${API_BASE}/${id}`);

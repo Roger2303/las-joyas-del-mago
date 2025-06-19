@@ -1,3 +1,5 @@
+//accede a la base de datos para buscar un usuario por su correo electrónico//
+
 const db = require("../db/database");
 
 async function getUserByEmail(email) {

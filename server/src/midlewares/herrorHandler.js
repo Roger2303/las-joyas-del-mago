@@ -1,6 +1,9 @@
+//midleware de manejo de errores. Capturamos errores y devolvemos una respuesta al usuario.
+
 const AppHerror = require("../helpers/App.Herror");
 const logger = require("../utils/logger");
 
+//midleware de manejo de errores con cuatro requerimientos//
 const handleHerror = (err, req, res, next) => {
   const status = err.status || 500;
   const message = err.message || "Error interno del servidor";

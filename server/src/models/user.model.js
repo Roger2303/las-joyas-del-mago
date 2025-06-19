@@ -1,5 +1,6 @@
 const db = require("../db/database");
 
+//buscamos un usuario por email en la bdd//
 const findByEmail = async (email) => {
   const result = await db.query("SELECT * FROM users WHERE email = $1", [
     email,
@@ -7,6 +8,8 @@ const findByEmail = async (email) => {
   return result.rows[0] || null;
 };
 
+
+//creamos nuevo usuario en BDD users//
 const create = async ({ name, email, password }) => {
   const result = await db.query(
     "INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING id, name, email, created_at",
